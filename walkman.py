@@ -1,3 +1,4 @@
+#!/usr/bin/env python2
 """
 Copyright (c) 2014, Patrick Louis <patrick at iotek do org>
 All rights reserved.
