@@ -103,8 +103,14 @@ def jack_in_state():
     if JACK_FILE == "":
         JACK_FILE = open(JACK_LOCATION,'r').read()
         return False
+
     new_file = open(JACK_LOCATION,'r').read()
 
+    if JACK_FILE == new_file:
+        if CURRENT_STATE[0] == "I":
+            return True
+        else 
+            return False
     sp1 = JACK_FILE.split("\n")
     sp2 = new_file.split("\n")
     JACK_FILE = new_file
