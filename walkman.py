@@ -74,7 +74,7 @@ STATE_COMMANDS= {
         "IOOC":"",
         "OCIO":"",
         "OCIC":"",
-        "ICOC":"espeak 'remove jack while lide closed'",
+        "ICOC":"espeak 'remove jack while lid closed'",
         "ICOO":"",
         "OOIC":"",
         "IOIC":"",
@@ -107,6 +107,7 @@ def jack_in_state():
 
     sp1 = JACK_FILE.split("\n")
     sp2 = new_file.split("\n")
+    JACK_FILE = new_file
     for i in range(len(sp2)): #loop in the new file
         if sp2[i] != sp1[i]:
             if "OUT" in sp2[i]:
