@@ -70,7 +70,7 @@ The commands to be executed when switching from one state to another
 """
 STATE_COMMANDS= {
         "OOIO":"",
-        "IOOO":"",
+        "IOOO":"pause_mute_zik.sh",
         "IOOC":"",
         "OCIO":"",
         "OCIC":"",
@@ -109,7 +109,7 @@ def jack_in_state():
     if JACK_FILE == new_file:
         if CURRENT_STATE[0] == "I":
             return True
-        else 
+        else :
             return False
     sp1 = JACK_FILE.split("\n")
     sp2 = new_file.split("\n")
